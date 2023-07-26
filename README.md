@@ -27,7 +27,7 @@ To compute the accuracy I used the simplest distribution I could come up with:
 
 $$acc(x_1,x_2,y_1,y_2) = \left(\frac{1}{1 + |x_1-y_1|}\right)\left(\frac{1}{1 + |x_2-y_2|}\right)$$
 
-... where "$x_1$-$x_2$" is the guessed scoreline and "$y_1$-$y_2$" is the actual result.
+... where $x_1-x_2$ is the guessed scoreline and $y_1-y_2$ is the actual result (PS: those are dashes, not subtractions).
 
 A distribution is used instead of ratios because:
 
