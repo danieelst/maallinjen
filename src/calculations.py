@@ -28,3 +28,7 @@ def accuracy(guessed, result):
   g1,g2 = goals(guessed)
   r1,r2 = goals(result)
   return distribution(g1,r1) * distribution(g2,r2)
+
+# Check if the result would have been correct, if the result differed with n goals
+def n_diff(n, guessed, result):
+  return difference(guessed, result) <= n

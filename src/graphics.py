@@ -22,7 +22,7 @@ def draw_graph(df, title):
     else:
       labels[y_val] = label
     return labels
-  
+
   fig, ax = plt.subplots()
   set_default_style(fig,ax)
 
@@ -42,6 +42,7 @@ def draw_graph(df, title):
 
   plt.rcParams["axes.prop_cycle"] = plt.cycler('color', plt.cm.hsv(np.linspace(0,1,len(df.columns))))
   plt.xlim(xmin=0.0)
+  plt.xticks(df.index)
   ax.yaxis.set_major_locator(MaxNLocator(integer=True))
   plt.title(title, color='white')
   plt.legend(facecolor='black', framealpha=1, labelcolor='white', loc='upper center', bbox_to_anchor=(0.5, -0.05), ncol=5)

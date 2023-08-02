@@ -31,5 +31,5 @@ $$acc(x_1,x_2,y_1,y_2) = \left(\frac{1}{1 + |x_1-y_1|}\right)\left(\frac{1}{1 + 
 
 A distribution is used instead of ratios because:
 
-  * Zero-scores results in zero accuracy or divide-by-zero
+  * Zero-scores result in zero accuracy or divide-by-zero
   * A difference in a smaller scoreline gives a worse ratio than a similar difference in a larger scoreline
